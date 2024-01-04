@@ -6,7 +6,7 @@ export class Products {
     chpMsgSamsung = '//*[@id="tbodyid"]/h2'
     chpAddToCart = '//*[@id="tbodyid"]/div[2]/div/a'
     msgAlertAddToCart = 'Product added.'
-    chpMenuCart = '//*[@id="cartur"]'
+    chpMenuCart = '#cartur'
 
 
     // Fin variables
@@ -33,7 +33,7 @@ export class Products {
 
     // Cliquer sur le menu cart
     clickOnCart(){
-        cy.xpath(chpMenuCart).click()
+        cy.get('#cartur').click()
         cy.wait(2000)
     }
 
